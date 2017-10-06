@@ -26,18 +26,18 @@ public class TakeMeToThe{
         System.out.println(candyShop);
         // Should print out:
         // Invetory: 2 candies, 2 lollipops, Income: 0$, Sugar: 270gr
-        candyShop.sell(CandyShop.CANDY, 1);
-        System.out.println(candyShop);
-        // Should print out:
-        // "Invetory: 1 candies, 2 lollipops, Income: 20$, Sugar: 285gr"
-        candyShop.raise(5);
-        candyShop.sell(CandyShop.LOLLIPOP, 1);
-        System.out.println(candyShop);
-        // Should print out:
-        // "Invetory: 1 candies, 1 lollipops, Income: 35$, Sugar: 285gr"
-        candyShop.buySugar(300);
-        System.out.println(candyShop);
-        // Should print out:
-        // "Invetory: 1 candies, 1 lollipops, Income: 5$, Sugar: 315gr"
+//        candyShop.sell(CandyShop.CANDY, 1);
+//        System.out.println(candyShop);
+//        // Should print out:
+//        // "Invetory: 1 candies, 2 lollipops, Income: 20$, Sugar: 285gr"
+//        candyShop.raise(5);
+//        candyShop.sell(CandyShop.LOLLIPOP, 1);
+//        System.out.println(candyShop);
+//        // Should print out:
+//        // "Invetory: 1 candies, 1 lollipops, Income: 35$, Sugar: 285gr"
+//        candyShop.buySugar(300);
+//        System.out.println(candyShop);
+//        // Should print out:
+//        // "Invetory: 1 candies, 1 lollipops, Income: 5$, Sugar: 315gr"
     }
 }

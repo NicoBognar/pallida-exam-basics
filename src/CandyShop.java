@@ -1,5 +1,5 @@
-import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class CandyShop {
 
@@ -13,7 +13,6 @@ public class CandyShop {
 
   public CandyShop(int money) {
     this.money = money;
-
   }
 
 
@@ -25,14 +24,14 @@ public class CandyShop {
     stock.add(type);
   }
 
-  public int raisePrice(int percentage) {
+  public int raise(int percentage) {
     this.percentage = percentage;
     int newPrice;
     newPrice = (price * percentage) / 100;
     return newPrice;
   }
 
-  public void sell(int sweetsForSale) {
+  public void sell(String type, int sweetsForSale) {
     for (int i = 0; i < sweetsForSale; i++) {
       stock.remove(i);
       money += i * price;
