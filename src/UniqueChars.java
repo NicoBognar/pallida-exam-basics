@@ -1,4 +1,5 @@
-import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class UniqueChars {
 
@@ -11,9 +12,18 @@ public class UniqueChars {
     // ["n", "g", "r", "m"]
   }
 
-  public static ArrayList<String> uniqueCharacters(String input) {
+  public static List<String> uniqueCharacters(String input) {
+    String temporal = "";
+    for (int i = 1; i < input.length(); i++) {
+      char currentChar = input.charAt(i);
+      if (temporal.indexOf(currentChar) < 1) {
+        temporal = temporal + currentChar;
+      } else {
+        temporal = temporal.replace(String.valueOf(currentChar), "");
+      }
+    }
 
-    return null;
+    return Arrays.asList(temporal + "");
   }
 
 }
