@@ -9,12 +9,16 @@ public class CandyShop {
   int percentage;
   int price;
   int money;
+  int income;
   ArrayList<String> stock;
 
   public CandyShop(int money) {
     this.money = money;
-  }
+    this.income = income;
 
+    System.out.println(
+        "Inventory: " + stock + ", Income: $" + income + ", Sugar: " + sugarAmount + " gr");
+  }
 
   public void createSweets(String type) {
     this.stock = new ArrayList<>();
@@ -35,6 +39,7 @@ public class CandyShop {
     for (int i = 0; i < sweetsForSale; i++) {
       stock.remove(i);
       money += i * price;
+      this.income = i * price;
     }
 
   }
