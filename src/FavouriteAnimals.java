@@ -27,7 +27,6 @@ public class FavouriteAnimals {
     } else if (args.length >= 1) {
       writeAnimals(args);
     }
-
   }
 
 
@@ -42,31 +41,12 @@ public class FavouriteAnimals {
     try {
       Path myFile = Paths.get("favourites.txt");
       Files.write(myFile, animal, StandardOpenOption.APPEND);
-  } catch(
-  IOException e)
-
-  {
-    System.out.println("I'm really sorry, I couldn't comprehend what you were talking about");
+    } catch (
+        IOException e) {
+      System.out.println("I'm really sorry, I couldn't comprehend what you were talking about");
+    }
   }
 }
-//    Path filePath = Paths.get("favourites.txt");
-//    List<String> content = new ArrayList();
-//    content.add(String.valueOf(args));
-//    try {
-//      Files.write(filePath, content, StandardOpenOption.APPEND);
-//    } catch (Exception e) {
-//      System.out.println("Uh-oh, could not write the file!");
-//    }
-//  }
-}
-//    try {
-//      Path myPath = Paths.get("/favourites.txt");
-//      List<String> lines = Files.readAllLines(myPath);
-//      Files.newBufferedWriter(myPath, (OpenOption) lines, StandardOpenOption.APPEND);
-//    } catch (IOException e) {
-//      System.out.println("Cannot write, code is lame");
-//    }
-//  }
 
 
 
