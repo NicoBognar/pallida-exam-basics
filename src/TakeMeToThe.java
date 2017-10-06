@@ -1,4 +1,4 @@
-public class TakeMeToThe extends CandyShop{
+public class TakeMeToThe{
     public static void main(String[] args) {
         // We run a Candy shop where we sell candies and lollipops
         // One lollipop's price is 10$
