@@ -4,4 +4,5 @@ public class Candy extends CandyShop {
     super(10);
     price = 20;
   }
+
 }

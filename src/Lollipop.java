@@ -4,4 +4,5 @@ public class Lollipop extends CandyShop {
     super(5);
     price = 10;
   }
+
 }

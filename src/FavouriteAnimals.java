@@ -6,6 +6,7 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
 
 public class FavouriteAnimals {
@@ -41,11 +42,18 @@ public class FavouriteAnimals {
     try {
       Path myFile = Paths.get("favourites.txt");
       Files.write(myFile, animal, StandardOpenOption.APPEND);
+
+      if (animal.contains(Arrays.asList(args))) {
+        System.out.println("please, don't do this to me");
+      } else {
+        Files.write(myFile, animal, StandardOpenOption.APPEND);
+      }
     } catch (
         IOException e) {
       System.out.println("I'm really sorry, I couldn't comprehend what you were talking about");
     }
   }
+
 }
 
 
